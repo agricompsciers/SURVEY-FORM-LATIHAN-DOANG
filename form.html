@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">TSA IPB Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve this organization</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name">
+          Name
+          <input id="name" type="text" placeholder="eg: Hadi Sunaedi" required/>
+        </label>
+        <label for="email">
+          Email
+          <input id="email" type="email" placeholder="example@gmail.com" required/>
+        </label>
+        <label for="number">
+          Age
+          <input id="number" type="number" placeholder="eg: 20" min="13" max="150"/>
+        </label>
+        <label for="dropdown">
+          Division
+          <select id="dropdown">
+            <option>Executive Board</option>
+            <option>Talent Improvement</option>
+            <option>Talent Engagement</option>
+            <option>Branding and External</option>
+            <option>Media and Design</option>
+            <option>Social Project</option>
+          </select>
+      </fieldset>
+      <fieldset class="inline">
+        <legend>TELADAN Cohort</legend>
+        <label for="cohort-2023">
+          <input class="inline" type="radio" name="cohort" checked/>
+          2023
+        </label>
+        <label for="cohort-2024">
+          <input class="inline" type="radio" name="cohort"/>
+          2024
+        </label>
+        <label for="cohort-2025">
+          <input class="inline" type="radio" name="cohort"/>
+          2025
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like improved?</legend>
+        <label for="communication">
+          <input type="checkbox" value="communication" checked/>
+          Communication between members
+        </label>
+        <label for="scheduling">
+          <input type="checkbox" value="scheduling"/>
+          Activity scheduling
+        </label>
+        <label for="qof">
+          <input type="checkbox" value="qof"/>
+          Quality of life
+        </label>
+        <label for="teambond">
+          <input type="checkbox" value="teambond"/>
+          Team bonding
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestion">
+          Can you describe more?
+          <textarea placeholder="The meeting goes on for too long!"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit"/>
+    </form>
+  </body>
